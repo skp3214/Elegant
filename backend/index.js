@@ -11,7 +11,7 @@ dotenv.config();
 const app=express();
 
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['https://elegant-amber.vercel.app'];
 
 app.use(cors({
     origin: (origin, callback) => {
