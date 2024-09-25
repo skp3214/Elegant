@@ -28,7 +28,6 @@ app.use(cors({
     optionsSuccessStatus: 204
 }));
 
-// Ensure Access-Control-Allow-Origin header is set for all responses
 app.use((req, res, next) => {
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {

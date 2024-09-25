@@ -4,7 +4,6 @@ import productService from '../api/product.api.js';
 import Navbar from './Navbar';
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../store/cartSlice.js';
-import { useSelector } from 'react-redux';
 const ProductPage = () => {
     const [product, setProduct] = useState(null);
     const [count, setCount] = useState(1)

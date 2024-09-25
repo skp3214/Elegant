@@ -3,7 +3,7 @@ import { sofa } from '../constants'
 import authService from '../api/auth.api.js'
 import { login, setUser } from '../store/authSlice.js'
 import { setUserId } from '../store/cartSlice.js'
-import { useDispatch, useSelector} from 'react-redux'
+import { useDispatch} from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 const SignIn = () => {
     const [email, setEmail] = useState("")

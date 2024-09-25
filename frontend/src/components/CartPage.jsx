@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeProduct } from '../store/cartSlice.js'; // Redux actions
-import cartService from '../api/cart.api.js'; // Import cart service
+import { removeProduct } from '../store/cartSlice.js';
 import productService from '../api/product.api.js';
 import { Link } from 'react-router-dom';
 

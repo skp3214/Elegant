@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { sofa } from '../constants'
 import authService from '../api/auth.api.js'
 import { login, setUser } from '../store/authSlice.js'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch} from 'react-redux'
 import {setUserId} from '../store/cartSlice.js'
 import { useNavigate } from 'react-router-dom'
 const SignUp = () => {
