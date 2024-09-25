@@ -61,6 +61,9 @@ app.use("/api/auth",authRoutes);
 app.use("/api",productRoutes);
 app.use("/api",cartRoutes);
 app.use("/api",orderRoutes);
+app.use("/api",(req,res)=>{
+    res.status(404).json({message:"Welcome to elegant api"});
+});
 
 app.listen(PORT,()=>{
     console.log(`server is running on port ${PORT}`);
